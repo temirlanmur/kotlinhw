@@ -1,5 +1,3 @@
-import kotlin.reflect.typeOf
-
 fun main() {
     println("2 to the power 6 is ${2.power(6)}")
     println("5 to the power -2 is ${5.power(-2)}")
@@ -17,7 +15,7 @@ fun main() {
 
 fun Int.power(i: Int): Double {
     if (i == 0) {
-        return 1.0;
+        return 1.0
     }
 
     val isPositivePower = i > 0
@@ -28,7 +26,7 @@ fun Int.power(i: Int): Double {
         x--
     }
 
-    return if (isPositivePower) p else 1 / p;
+    return if (isPositivePower) p else 1 / p
 }
 
 fun Int.power(i: Int, op: (Double) -> Unit) {
@@ -41,6 +39,6 @@ fun <T> T.displayTypeInfo() {
         is String -> println("это String")
         is DataType.DoubleType -> println("это DoubleType со значением ${this.value}")
         is DataType.UnitType -> println("это Unit")
-        else -> println("тип у ${this} неизвестен")
+        else -> println("тип у $this неизвестен")
     }
 }
