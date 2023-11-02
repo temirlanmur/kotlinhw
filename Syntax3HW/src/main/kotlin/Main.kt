@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val v1 = Point(1, 2)
     val v2 = Point(3, 4)
     val v3 = Point(5, 9)
